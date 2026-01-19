@@ -12,7 +12,7 @@ function showRecentBoards() {
   recentBoards.forEach(function (name) {
     var listItem = document.createElement("li");
     var link = document.createElement("a");
-    link.setAttribute("href", `/boards/${encodeURIComponent(name)}`);
+    link.setAttribute("href", `boards/${encodeURIComponent(name)}`);
     link.textContent = name;
     listItem.appendChild(link);
     list.appendChild(listItem);
